@@ -8,7 +8,7 @@
 
 import express, { Application } from 'express';
 import { json } from 'body-parser';
-import { authRoutes } from './infrastructure/http/authRoutes';
+import { authRoutes } from './infrastructure/http/routes/v1/authRoutes';
 
 export const createServer = (): Application => {
   const app = express();
